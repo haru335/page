@@ -264,6 +264,13 @@ h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-sp
 .icon { height: 100px; width: 100px; line-height: 100px; max-width: 100%; display: block; color: #242830; font-size: 55px; text-align: center; vertical-align: middle; position: relative; margin: 0 auto; }
 
 
+.intro {
+	background: url("imgs/one.jpg");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
 /* ==========================================================================
 Portfolio
 ========================================================================== */
