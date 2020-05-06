@@ -496,3 +496,8 @@ Waypoints
 .global-sp-header-nav ul li {	 font-size: 1.6rem;	 letter-spacing: 0.2em;	padding: 24px 0;}
 .global-sp-header-nav ul li:not(:first-child) {	padding: 0 0 24px; }
 .global-sp-header-nav ul li a {	display: block;	text-decoration: none;	color:#FFFFFF;}
+
+/* 表示の切り替え */
+.pc-menu { }
+.sp-menu { display:none; }
+@media screen and (max-width:979px) { .pc-menu { display:none; }	.sp-menu { display:block; } }
