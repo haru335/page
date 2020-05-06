@@ -234,9 +234,6 @@ Hero
 
 .about {background-image: none !important; background-color: #242830 !important; padding: 40px 0 60px;}
 
-
-.portoflio-page .intro {background-color: #fff;}
-
 .slider-ypw {background-color: #9fddce;}
 .slider-barbuddy {background-color: #0c0c0c;}
 .slider-reading {background-color: #bbd8ea;}
@@ -256,23 +253,6 @@ Hero
 .hero .learn-more-btn { border: 1px solid #fff; padding: 20px 40px; color: #fff; border-radius: 3px;}
 .learn-more-btn:hover, .learn-more-btn:focus {color: #0093cb; }
 .hero .learn-more-btn:hover, .hero .learn-more-btn:focus {opacity: 1; border-color: #0093cb; color: #fff; }
-
-/* ==========================================================================
-Intro
-========================================================================== */
-.intro { background: #f3f5f8; }
-.intro p { margin: 20px 0 0; }
-h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 3px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
-
-.icon { height: 100px; width: 100px; line-height: 100px; max-width: 100%; display: block; color: #242830; font-size: 55px; text-align: center; vertical-align: middle; position: relative; margin: 0 auto; }
-
-
-.intro {
-	background: url("imgs/one.jpg");
-	background-size: 256px 256px, cover;
-	background-attachment: fixed, fixed;
-	background-position: top left, center center;
-}
 
 /* ==========================================================================
 Portfolio
