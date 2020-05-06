@@ -393,7 +393,7 @@ Waypoints
 	width: 20%;
 	text-align: center;
 	font-weight: 400;
-	font-size:1.2rem;
+	font-size: 22px;
 }
 .is-fixed .global-pc-header li {
 	transition: 0.24s all ease;
