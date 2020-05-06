@@ -56,6 +56,7 @@ Typography
 .white {color: white;}
 .no-margin {padding: 0px; margin: 0px;}
 .hero h1.projecth1 {font-size: 32px;}
+
 .logo {font-size: 26px; line-height: 1.2em; font-weight: 600; font-family: 'Raleway'; letter-spacing: 2px; text-transform: uppercase; color: #fff;}
 .logo:hover {border-bottom: 2px solid #fff; color: #fff;}
 .inner-title {font-size: 22px; line-height: 1.2em; font-weight: 600; font-family: 'Raleway'; letter-spacing: 2px; text-transform: uppercase; margin: 0px; text-align: center; padding-bottom: 20px;}
@@ -330,11 +331,8 @@ Waypoints
 .delay-25s { animation-delay: 2.5s; -webkit-animation-delay: 2.5s; }
 .wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
 
-
-
 /******************************************************
-* PC MENU　　
-引用URL：　file:///Users/haruka/Desktop/%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%82%89%E3%83%98%E3%83%83%E3%82%BF%E3%82%99%E3%82%92%E5%9B%BA%E5%AE%9A%E3%80%81%E3%83%8A%E3%83%92%E3%82%99%E3%82%92%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%A4%89%E5%8C%96%E3%81%95%E3%81%9B%E3%81%A6%E3%81%BF%E3%82%8B%E3%80%82%20_%20LittleThings.html
+* PC MENU　　引用：　file:///Users/haruka/Desktop/%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%82%89%E3%83%98%E3%83%83%E3%82%BF%E3%82%99%E3%82%92%E5%9B%BA%E5%AE%9A%E3%80%81%E3%83%8A%E3%83%92%E3%82%99%E3%82%92%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%A4%89%E5%8C%96%E3%81%95%E3%81%9B%E3%81%A6%E3%81%BF%E3%82%8B%E3%80%82%20_%20LittleThings.html
 ******************************************************/
 .global-pc-header__wrapper {
 	padding: 30px 0 8px 0;
@@ -343,7 +341,7 @@ Waypoints
 	border-bottom: #e3e3e3 solid 7px;
 	box-shadow: 0 0 3px 0 #e3e3e3;
 	line-height: 1;
-	transition: .1s;
+	transition: .3s;
 }
 .is-fixed {
 	position: fixed;
@@ -358,7 +356,7 @@ Waypoints
 	top: 0;
 	left: 0;
 	z-index: 8675399;
-  	width: 100%;
+  width: 100%;
 	-webkit-transition: all .4s ease 0s,background .6s ease .2s;
 	transition: all .4s ease 0s,background .6s ease .2s;
 	-webkit-overflow-scrolling: touch;
@@ -372,13 +370,15 @@ Waypoints
 	overflow: hidden;
 	display:table;
 }
-.global-pc-header-logo {
-	width: 250px;
-	display:table-cell;
-	vertical-align:top;
-}
+.global-pc-header-logo {	padding: 20px 5px 8px 20px; /*	width: 250px;	display:table-cell;	vertical-align:top;*/ }
+
+/* 画面左のロゴ置き場。名前の表示に使用。  */
 .global-pc-header-logo img { max-width:126px; }
 .global-pc-header-logo a:hover {	-webkit-animation: fluffy 0.8s linear 0s 1;	animation: fluffy 0.8s linear 0s 1; }
+
+
+
+
 .global-pc-header-nav {
 	max-width: 710px;
 	width: 100%;
@@ -404,13 +404,7 @@ Waypoints
   -o-transition: all 0.7s ease;
   transition: all  0.7s ease;
 }
-.global-pc-header li a,
-.global-pc-header li a:visited {
-	text-decoration: none;
-	color: #000000;
-	display: block;
-	padding: 3px 0;
-}
+.global-pc-header li a, .global-pc-header li a:visited {	text-decoration: none;	color: #000000;	display: block;	padding: 3px 0; }
 .global-pc-header li a::after,
 .global-pc-header li a:hover,
 .global-pc-header li a:active,
@@ -425,16 +419,9 @@ Waypoints
 	color: #f96482;
 	padding: 3px 0;
 }
-.nav-en {
-	display:block;
-	font-size:1.1rem;
-	color:#72C1D7;
-	padding-top: 10px;
-	font-family: 'Josefin Sans', sans-serif;
-}
-.is-fixed .nav-en {
-	transition: .24s all ease;
-}
+
+.nav-en {	display:block;	font-size:1.1rem;	color:#72C1D7;	padding-top: 10px;	font-family: 'Josefin Sans', sans-serif; }
+.is-fixed .nav-en {	transition: .24s all ease; }
 
 @media screen and (min-width:979px) and (max-width:1179px) {
 	.global-pc-header li {
@@ -462,7 +449,7 @@ Waypoints
 .menu-trigger {	position: relative;	width: 50px;	height: 50px;	color:#72C1D7;	border-radius: 4px;	z-index: 7; }
 
 /*　3本線を <span> で1つずつ作る　 */
-.menu-trigger span{ position: absolute;	background: #72C1D7;	width: 30px;	height: 3px;	left: 0;	right: 0;	margin: auto;}
+.menu-trigger span{ position: absolute;	background: #afeeee/*paleturquoise*/;	width: 30px;	height: 3px;	left: 0;	right: 0;	margin: auto;}
 .menu-trigger span:nth-of-type(1){ top: 19px;}
 .menu-trigger span:nth-of-type(2){ top: 9px;	bottom: 0;}
 .menu-trigger span:nth-of-type(3){ bottom: 10px; }
@@ -471,7 +458,7 @@ Waypoints
 .menu-trigger.active span:nth-of-type(1){ -webkit-transform: translateY(9px) rotate(-45deg);	transform: translateY(9px) rotate(-45deg);}
 .menu-trigger.active span:nth-of-type(2){ opacity: 0;}
 .menu-trigger.active span:nth-of-type(3){ -webkit-transform: translateY(-9px) rotate(45deg);	transform: translateY(-9px) rotate(45deg);}
-#menu-text { font-size: 10px; margin: -2px 0; text-align: center;	color: #72C1D7;	font-family: 'Josefin Sans', sans-serif;}
+#menu-text { font-size: 10px; margin: -2px 0; text-align: center;	color: #afeeee/*paleturquoise*/;	font-family: 'Josefin Sans', sans-serif;}
 
 /* 広げたメニューを前面に表示 */
 .global-sp-header__wrapper{	background: rgba(61,153,150,0.8);
