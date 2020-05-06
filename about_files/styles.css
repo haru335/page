@@ -358,7 +358,6 @@ Waypoints
 
 
 
-
 .global-pc-header-nav {
 	max-width: 710px;
 	width: 100%;
@@ -371,20 +370,16 @@ Waypoints
 }
 .global-pc-header li {
 	width: 20%;
-	text-align: center;
+	text-align: justify;
 	font-weight: 400;
 	font-size: 22px;
 }
-.is-fixed .global-pc-header li {
-	transition: 0.24s all ease;
-}
-.global-pc-header li a {
-	-webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all  0.7s ease;
-}
-.global-pc-header li a, .global-pc-header li a:visited {	text-decoration: none;	color: #000000;	display: block;	padding: 3px 0; }
+/* 動作時間（？）  */
+.is-fixed .global-pc-header li { transition: 0.24s all ease; }
+.global-pc-header li a {	-webkit-transition: all 0.7s ease;  -moz-transition: all 0.7s ease;  -o-transition: all 0.7s ease;  transition: all  0.7s ease; }
+
+.global-pc-header li a,
+.global-pc-header li a:visited {	text-decoration: none;	color: #ffffff;	display: block;	padding: 3px 0; }
 .global-pc-header li a::after,
 .global-pc-header li a:hover,
 .global-pc-header li a:active,
@@ -441,8 +436,7 @@ Waypoints
 #menu-text { font-size: 10px; margin: -2px 0; text-align: center;	color: #afeeee/*paleturquoise*/;	font-family: 'Josefin Sans', sans-serif;}
 
 /* 広げたメニューを前面に表示 */
-.global-sp-header__wrapper{	background: rgba(61,153,150,0.8);
-	height: 60px;	z-index: 99999;	transition: .1s;	width: 100%;}
+.global-sp-header__wrapper{	background: rgba(61,153,150,0.8);	height: 60px;	z-index: 99999;	transition: .1s;	width: 100%;}
 .is-fixed-sp {	position: fixed;	top:0;	background-color: rgba(61,153,150,0.7);}
 
 /* 画面左のロゴ置き場。名前の表示に使用。  */
