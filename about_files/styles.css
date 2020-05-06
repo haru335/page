@@ -194,8 +194,9 @@ h2::after { content: " "; border: solid 1px #0093cb; display: block; width: 55px
 .nopadding { padding: 0; }
 .inner { padding-top: 200px; }
 /* ==========================================================================
-Navigation
+     Navigation
 ========================================================================== */
+/*
 nav { background-color: #242830; margin-top: -1px; }
 nav ul { list-style: none; padding: 0; }
 nav ul li { color: rgba(255, 255, 255, 0.6); display: block; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
@@ -215,6 +216,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 .navicon { position: relative; height: 26px; }
 .indicator { position: absolute; right: 0 !important; }
 .pull { display: none; }
+*/
 
 /* ==========================================================================
 Hero
@@ -326,82 +328,28 @@ Waypoints
 .delay-15s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
 .delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
 .delay-25s { animation-delay: 2.5s; -webkit-animation-delay: 2.5s; }
-
 .wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
 
 
 
-/* Contact Form Style */
-#message {padding-bottom: 10px; color: #0093cb; text-align: center;}
-
-form {padding: 0px 0px 20px 0px;}
-form .row {width: 100%; display: block; padding: 6px 0px;}
-form .row span {width: 90px; padding-top: 5px; float: left;}
-form input {padding: 16px; border: none; border: 0px; font-size: 16px; width: 100%; letter-spacing: 1px;}
-form textarea {padding: 16px; border: 0px; font-size: 16px; width: 100%; margin: 5px 0px;}
-form .row .field {float: left; width: 100%;}
-
-input[type=submit] {
-    -moz-appearance: button;
-    -moz-binding: none;
-    -moz-box-sizing: border-box;
-    -moz-user-select: none;
-   -webkit-appearance: none;
-
-    cursor: pointer;
-	text-align: center;
-	border: 2px solid #eeeeee;
-	padding: 15px 0px;
-	font-size: 12px;
-	margin: 10px auto;
-	width: 120px;
-	display: block;
-	text-decoration: none;
-	font-family: 'Varela Round', sans-serif;
-	background-color: #fff;
-	font-weight: 100;
-	letter-spacing: 1px;
-	color: #999;
-	text-transform: uppercase;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
-}
-
-
-
-
-/*   header  */
-.is-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-}
-
-/*
-* PC MENU
+/******************************************************
+* PC MENU　　
+引用URL：　file:///Users/haruka/Desktop/%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%82%89%E3%83%98%E3%83%83%E3%82%BF%E3%82%99%E3%82%92%E5%9B%BA%E5%AE%9A%E3%80%81%E3%83%8A%E3%83%92%E3%82%99%E3%82%92%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%A4%89%E5%8C%96%E3%81%95%E3%81%9B%E3%81%A6%E3%81%BF%E3%82%8B%E3%80%82%20_%20LittleThings.html
 ******************************************************/
 .global-pc-header__wrapper {
-	padding: 25px 0 8px 0;
-	height: 68px;
-	background-color: rgba(255,255,255,0);
-	/*border-bottom: #e3e3e3 solid 1px;*/
+	padding: 30px 0 8px 0;
+	height: 120px;
+	background-color: rgba(61,153,150,0.9);   /*  背景の色　*/
+	border-bottom: #e3e3e3 solid 7px;
 	box-shadow: 0 0 3px 0 #e3e3e3;
 	line-height: 1;
 	transition: .1s;
 }
 .is-fixed {
 	position: fixed;
-	padding: 10px 0 5px 0;
-	height: 47px;
-	background-color: rgba(255,255,255,0.9);
+	padding: 0px 0 5px 0;
+	height: 60px;                           /*  固定されている時の高さ　*/
+	background-color: rgba(61,153,150,0.8);
 	-moz-box-shadow: 10px 10px;
 	-webkit-box-shadow: 10px 10px;
 	-o-box-shadow: 10px 10px;
@@ -429,13 +377,8 @@ border-radius: 6px;
 	display:table-cell;
 	vertical-align:top;
 }
-.global-pc-header-logo img {
-	max-width:126px;
-}
-.global-pc-header-logo a:hover {
-	-webkit-animation: fluffy 0.8s linear 0s 1;
-	animation: fluffy 0.8s linear 0s 1;
-}
+.global-pc-header-logo img { max-width:126px; }
+.global-pc-header-logo a:hover {	-webkit-animation: fluffy 0.8s linear 0s 1;	animation: fluffy 0.8s linear 0s 1; }
 .global-pc-header-nav {
 	max-width: 710px;
 	width: 100%;
@@ -514,8 +457,7 @@ border-radius: 6px;
 /*
 * SP MENU
 ******************************************************/
-.menu-trigger,
-.menu-trigger span{
+.menu-trigger, .menu-trigger span{
 	display: inline-block;
 	transition: all .4s;
 	box-sizing: border-box;
@@ -565,7 +507,9 @@ border-radius: 6px;
 	color: #72C1D7;
 	font-family: 'Josefin Sans', sans-serif;
 }
+
 /* SP menu list */
+
 .global-sp-header__wrapper{
 	background: #fff;
 	height: 70px;
@@ -618,30 +562,6 @@ border-radius: 6px;
 }
 .global-sp-header-nav ul li a {
 	display: block;
-	text-decoration: none;
-	color:#FFFFFF;
-}
-.head-nav-en {
-	font-family: 'Josefin Sans', sans-serif;
-}
-.global-sp-header-nav ul.list-2col {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-.global-sp-header-nav ul.list-2col li {
-	font-size: 1.3rem;
-	letter-spacing: 0.175em;
-	padding: 12px 6px 0 0;
-}
-.global-sp-header-nav ul.list-2col li:not(:first-child) {
-	padding: 12px 0 0 6px;
-}
-.global-sp-header-nav ul.list-2col li a {
-	display: inline-block;
 	text-decoration: none;
 	color:#FFFFFF;
 }
