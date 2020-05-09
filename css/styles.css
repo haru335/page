@@ -370,9 +370,18 @@ Waypoints
 }
 .global-pc-header li {
 	width: 20%;
+	margin-right: 40px;
 	text-align: justify;
 	font-weight: 400;
 	font-size: 22px;
+}
+.global-pc-header-nav a {
+	/*width: 20%;*/
+	margin-left: 40px;
+	/*text-align: justify;*/
+	font-size: 22px;
+	letter-spacing: normal !important;
+	font-stretch: normal !important;
 }
 /* 動作時間（？）  */
 .is-fixed .global-pc-header li { transition: 0.24s all ease; }
