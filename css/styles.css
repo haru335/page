@@ -463,7 +463,7 @@ Waypoints
 }
 /* 広げたシート上の項目 */
 .global-sp-header-nav ul {	display: block;	text-align: center; padding: 0}
-.global-sp-header-nav ul li {	 font-size: 1.6rem;	 letter-spacing: 0.2em;	padding: 24px 0;}
+.global-sp-header-nav ul li {	 font-size: 1.6rem;	 letter-spacing: 0.1em;	padding: 24px 0;}
 .global-sp-header-nav ul li:not(:first-child) {	padding: 0 0 24px; }
 .global-sp-header-nav ul li a {	display: block;	text-decoration: none;	color:#FFFFFF;}
 
