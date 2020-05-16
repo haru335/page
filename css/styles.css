@@ -35,9 +35,7 @@ body { margin: 0; font-family: 'Varela Round', sans-serif;}
 body.home {background-color: #1b244b;}
 body.projects footer {background-color: #242830 !important; padding: 60px 0px !important; clear: both;}
 body.projects {background-color: #242830 !important;}
-
 body.home footer {padding: 60px 0px !important; clear: both; background-color: #1b244b;}
-
 
 /* ==========================================================================
 Links
